@@ -10,17 +10,22 @@ import Kauppa from './pages/Kauppa';
 import Welcome from './pages/Welcome';
 import NotFound from './pages/NotFound';
 
+//context
+import { CartProvider } from './context';
+
 function App() {
 	return (
-		<main>
-			<Navbar />
-			<Routes>
-				<Route path="/" index element={<Welcome />} />
-				<Route path="kauppa" element={<Kauppa />} />
-				<Route path="*" element={<NotFound />} />
-			</Routes>
-			<Footer />
-		</main>
+		<CartProvider>
+			<main>
+				<Navbar />
+				<Routes>
+					<Route path="/" index element={<Welcome />} />
+					<Route path="kauppa" element={<Kauppa />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+				<Footer />
+			</main>
+		</CartProvider>
 	);
 }
 

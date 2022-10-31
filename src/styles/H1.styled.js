@@ -6,7 +6,7 @@ export const H1 = styled.h1`
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #fff;
+	color: #d6cca9;
 	width: 100%;
 	text-align: center;
 	font-size: clamp(2.3rem, 8vw, 7rem);

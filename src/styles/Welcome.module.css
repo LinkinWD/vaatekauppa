@@ -1,6 +1,8 @@
 .section{
     height: 100vh;
     background-color: #000 ;
+    position: relative;
+    overflow-x: hidden;
 }
 .section::before {
     content: '';
@@ -17,8 +19,17 @@
 
 .video {
     object-fit: cover;
+    height: 100%;
     margin-left: -150px;
 }
+
+.btn_container {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+
 @media only screen and (min-width: 1100px) {
     .video {margin-left: 0;
 }}

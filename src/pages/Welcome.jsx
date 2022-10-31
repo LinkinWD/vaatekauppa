@@ -1,23 +1,29 @@
 import React,{ useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-import styles from '../styles/Welcome.module.css';
 import { Link } from 'react-router-dom';
 
-import { H1 } from '../styles/H1.styled';
+//module styles
+import styles from '../styles/Welcome.module.css';
 
-import Smoke from '../public/video/smoke.mp4';
+//styled components
+import { H1 } from '../styles/H1.styled';
 import { Button } from '../styles/Button.styled';
+//smoke video
+import Smoke from '../public/video/smoke.mp4';
+
 
 
 const Welcome = () => {
-	const [timeLeft, setTimeLeft] = useState(6)
+
+	const width = window.innerWidth
+
+	const [timeLeft, setTimeLeft] = useState(width > 1100 ? 6 : 5)
 	const navigate = useNavigate()
 
+	
+	
 	useEffect(()=> {
 		timeLeft > -1 ? setTimeout(()=> setTimeLeft(timeLeft -1), 1000) : navigate('/shop');
-		
-
 		
 	},[timeLeft, navigate])
 
@@ -25,7 +31,7 @@ const Welcome = () => {
 		<section className={styles.section}>
 			<video className={styles.video} src={Smoke} autoPlay muted />
 			<H1>
-				<span className={styles.span}>v</span>
+				<span className={styles.span}>V</span>
 				<span className={styles.span}>a</span>
 				<span className={styles.span}>a</span>
 				<span className={styles.span}>t</span>
@@ -37,9 +43,9 @@ const Welcome = () => {
 				<span className={styles.span}>p</span>
 				<span className={styles.span}>a</span>
 			</H1>
-			<div>
+			<div className={styles.btn_container}>
 			<Link to='/shop'>
-				<Button theme='main'>Kauppaan {timeLeft}</Button>
+				<Button theme='welcome'>Kauppaan {timeLeft}</Button>
 			</Link>
 			</div>
 			

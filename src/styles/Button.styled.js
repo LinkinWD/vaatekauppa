@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-	padding: 1rem 2rem;
-	background-color: ${(props) => (props.theme === 'main' ? '#fff' : '#000')};
-	color: ${(props) => (props.theme === 'main' ? '#000' : '#fff')};
+	padding: 1rem 3rem;
+	background-color: ${(props) => (props.theme === 'welcome' ? '#D6CCA9' : '#fff')};
+	color: ${(props) => (props.theme === 'welcome' ? '#990000' : '#fff')};
+	border-radius: 20px;
+	font-size: 2rem;
+	font-weight: 700;
 `;

@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 //pages
-import Kauppa from './pages/Kauppa';
+import Shop from './pages/Shop';
 import Welcome from './pages/Welcome';
 import NotFound from './pages/NotFound';
 
@@ -20,7 +20,7 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" index element={<Welcome />} />
-					<Route path="kauppa" element={<Kauppa />} />
+					<Route path="shop" element={<Shop />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 				<Footer />

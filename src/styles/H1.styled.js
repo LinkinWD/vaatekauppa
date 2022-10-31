@@ -134,4 +134,39 @@ export const H1 = styled.h1`
 			animation-delay: 3.3s;
 		}
 	}
+	@media only screen and (min-width: 1500px) {
+		& span:nth-child(1) {
+			animation-delay: 0.4s;
+		}
+		& span:nth-child(2) {
+			animation-delay: 0.7s;
+		}
+		& span:nth-child(3) {
+			animation-delay: 1.1s;
+		}
+		& span:nth-child(4) {
+			animation-delay: 1.5s;
+		}
+		& span:nth-child(5) {
+			animation-delay: 1.8s;
+		}
+		& span:nth-child(6) {
+			animation-delay: 2.2s;
+		}
+		& span:nth-child(7) {
+			animation-delay: 2.5s;
+		}
+		& span:nth-child(8) {
+			animation-delay: 2.9s;
+		}
+		& span:nth-child(9) {
+			animation-delay: 3.2s;
+		}
+		& span:nth-child(10) {
+			animation-delay: 3.5s;
+		}
+		& span:nth-child(11) {
+			animation-delay: 3.8s;
+		}
+	}
 `;

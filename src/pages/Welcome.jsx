@@ -1,3 +1,6 @@
+import React,{ useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import styles from '../styles/Welcome.module.css';
 import { Link } from 'react-router-dom';
 
@@ -6,12 +9,17 @@ import { H1 } from '../styles/H1.styled';
 import Smoke from '../public/video/smoke.mp4';
 import { Button } from '../styles/Button.styled';
 
+
 const Welcome = () => {
-	const theme = {
+	const [timeLeft, setTimeLeft] = useState(6)
+	const navigate = useNavigate()
+
+	useEffect(()=> {
+		timeLeft > -1 ? setTimeout(()=> setTimeLeft(timeLeft -1), 1000) : navigate('/shop');
 		
-		bg: '#fff',
-		fg: '#000'
-	};
+
+		
+	},[timeLeft, navigate])
 
 	return (
 		<section className={styles.section}>
@@ -31,7 +39,7 @@ const Welcome = () => {
 			</H1>
 			<div>
 			<Link to='/shop'>
-				<Button theme='main'>Paina</Button>
+				<Button theme='main'>Kauppaan {timeLeft}</Button>
 			</Link>
 			</div>
 			

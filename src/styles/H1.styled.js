@@ -60,9 +60,6 @@ export const H1 = styled.h1`
 	& span:nth-child(10) {
 		animation-delay: 1s;
 	}
-	& span:nth-child(11) {
-		animation-delay: 1.1s;
-	}
 
 	@media only screen and (min-width: 700px) {
 		& span:nth-child(1) {
@@ -94,9 +91,6 @@ export const H1 = styled.h1`
 		}
 		& span:nth-child(10) {
 			animation-delay: 2.1s;
-		}
-		& span:nth-child(11) {
-			animation-delay: 1.1s;
 		}
 	}
 	@media only screen and (min-width: 1100px) {
@@ -130,9 +124,6 @@ export const H1 = styled.h1`
 		& span:nth-child(10) {
 			animation-delay: 3.0s;
 		}
-		& span:nth-child(11) {
-			animation-delay: 3.3s;
-		}
 	}
 	@media only screen and (min-width: 1500px) {
 		& span:nth-child(1) {
@@ -164,9 +155,6 @@ export const H1 = styled.h1`
 		}
 		& span:nth-child(10) {
 			animation-delay: 3.5s;
-		}
-		& span:nth-child(11) {
-			animation-delay: 3.8s;
 		}
 	}
 `;

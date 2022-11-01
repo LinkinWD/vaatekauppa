@@ -31,11 +31,10 @@ const Welcome = () => {
 		<section className={styles.section}>
 			<video className={styles.video} src={Smoke} autoPlay muted />
 			<H1>
-				<span className={styles.span}>V</span>
-				<span className={styles.span}>a</span>
-				<span className={styles.span}>a</span>
-				<span className={styles.span}>t</span>
+				<span className={styles.span}>D</span>
 				<span className={styles.span}>e</span>
+				<span className={styles.span}>m</span>
+				<span className={styles.span}>o</span>
 				<span className={styles.span}>k</span>
 				<span className={styles.span}>a</span>
 				<span className={styles.span}>u</span>

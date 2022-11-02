@@ -1,0 +1,26 @@
+{ "products":[
+    {
+        "id": 1,
+        "category": "Kengät",
+        "name": "Oranssi lenkkari",
+        "price": 29.99,
+        "size": [35,36,37,38,39,40,41,42,43,44],
+        "img": "https://res.cloudinary.com/dkvezzqnp/image/upload/v1667367748/samples/ecommerce/sneaker_mthzou.png"
+    },
+    {
+        "id": 2,
+        "category": "Kengät",
+        "name": "Liila lenkkari",
+        "price": 39.99,
+        "size": [35,36,37,38,39,40,41,42,43,44],
+        "img": "https://res.cloudinary.com/dkvezzqnp/image/upload/v1643983312/samples/ecommerce/shoes.png"
+    }
+,
+    {
+        "id": 3,
+        "category": "Housut",
+        "name": "Siniset farkut",
+        "price": 24.99,
+        "size": ["S", "M", "L","XL","2XL","3XL"],
+        "img":"https://res.cloudinary.com/dkvezzqnp/image/upload/v1667368063/samples/ecommerce/jeans_vu1n9g.png"}
+]}

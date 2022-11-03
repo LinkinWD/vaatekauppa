@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Btn = ({text}) => {
+const Btn = ({text, handleChance}) => {
   return (
-    <button>{text}</button>
+    <button onClick={()=> handleChance(text)}>{text}</button>
   )
 }
 

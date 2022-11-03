@@ -26,10 +26,11 @@ const Kauppa = () => {
 
   
   useEffect(()=> {
-      let tempArray =[]
+      let tempArray =['Kaikki']
       products.map((product) => {
        
         const {category} = product
+        
         if(!tempArray.includes(category)){
           tempArray.push(category)
         }
@@ -40,6 +41,22 @@ const Kauppa = () => {
   },[products])
   
 
+  const handleChance = (categoria) => {
+    if(categoria === 'Kaikki') {
+      console.log('dsd')
+      setShown(products)
+      console.log(shown)
+  } else {
+    let newList = []
+    products.map((product)=> {
+      if(product.category === categoria) {
+        newList.push(product)
+      }
+      setShown(newList)
+      console.log(shown)
+    })
+  }
+}
 
   return (
     <>
@@ -54,12 +71,13 @@ const Kauppa = () => {
     </section>
     
     <div>
-    <Btn text='Kaikki'/>
+    
     {categories.map((cat, idx)=> {
-      return <Btn key={idx} text={cat}/>
+      
+      return <Btn key={idx} text={cat} handleChance={handleChance}/>
 })}    
  </div>
-<div>{products.map((product) => {
+<div>{shown.map((product) => {
     return <p>{product.name}</p>
 })}
    
